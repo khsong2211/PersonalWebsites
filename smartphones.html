@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html>
+<title>SmartTech Org</title>
+<body> 
+<img id="image1" class="Slides" src="cover.jpg"> 
+<img id="image1" class="Slides" src="cover3.jpg"> 
+<!--Script for images--> 
+<script> 
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("Slides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 1500);
+}
+</script> 
+<center><h1><b>Welcome to SmartTech Org</b></h1></center>
+
+<table id="t1"> 
+<tr> 
+	<td><a href="http://localhost/lab3/personalweb.html">Home</a></td> 
+</tr> 
+<tr> 
+	<td><a href="http://localhost/lab3/smartphones.html">Smartphones</a></td> 
+</tr> 
+<tr> 
+	<td><a href="http://localhost/lab3/companyProfile.html">Company Profile</a></td> 
+</tr> 
+<tr> 
+	<td><a href="http://localhost/lab3/about.html">About</a></td> 
+</tr> 
+<tr> 
+	<td><a href="http://localhost/lab3/contact.html">Contact</a></td>
+</tr> 
+</table>
+<p><b>About</b></p>
+<p>Click the image below to get more info.</p> 
+<a href="http://www.gsmarena.com"><img border="0" src="screen1.png" width="300" height="300"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.samsung.com/my/home/"><img border="0" src="screen2.png" width="300" height="300"></a>
+</p>
+<!--CSS-->
+<style>
+body{
+	background-color:#A9A9A9; 
+}
+#t1 { 
+	float:left;	 
+	width:185px;
+	height:200px;
+	
+}
+#image1 { 
+	width:1150px;
+	height:350px;
+}
+</style>
+
+</body>
+</html>
